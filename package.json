@@ -15,7 +15,10 @@
     "test:watch": "node --test --watch --import tsx",
     "dev": "tsx src/agent.ts dev",
     "download-files": "pnpm run build && node dist/agent.js download-files",
-    "start": "node dist/agent.js start"
+    "start": "node dist/agent.js start",
+    "dialer": "tsx src/services/dialer.ts",
+    "webhooks": "tsx src/webhooks/server.ts",
+    "setup-db": "node -r dotenv/config scripts/setup-supabase.js"
   },
   "engines": {
     "node": ">=22.0.0",
@@ -37,6 +40,16 @@
     "@livekit/agents-plugin-livekit": "^1.0.11",
     "@livekit/agents-plugin-silero": "^1.0.11",
     "@livekit/noise-cancellation-node": "^0.1.9",
+    "@google/generative-ai": "^0.21.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "@deepgram/sdk": "^3.9.0",
+    "twilio": "^5.3.5",
+    "googleapis": "^144.0.0",
+    "csv-parser": "^3.0.0",
+    "express": "^4.21.2",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "axios": "^1.7.9",
     "dotenv": "^17.2.3",
     "zod": "^3.25.76"
   }

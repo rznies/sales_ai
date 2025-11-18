@@ -1,8 +1,64 @@
+# 🔥 CallKaro AI - The AI Sales Closer That Books Meetings Like a Desi Pro 📞
+
+> **Built on [LiveKit Agents for Node.js](https://github.com/livekit/agents-js) - Transformed into a production-ready AI Sales Bot for Indian startups!**
+
+## ✨ What is CallKaro AI?
+
+CallKaro AI is a complete AI-powered outbound calling system that:
+- 📞 **Makes automated cold calls** using Twilio Programmable Voice
+- 🗣️ **Speaks natural Hinglish** (Delhi/Mumbai accent) with Cartesia Sonic 3
+- 🤝 **Handles objections** like a pro Indian SDR (Raj/Riya persona)
+- 📅 **Books meetings automatically** via Google Calendar + Zoom
+- 🧠 **Powered by Google Gemini 1.5 Flash** with function calling
+- 🎤 **Deepgram Nova-2 STT** optimized for Indian English
+- 📊 **Tracks everything** in Supabase with full analytics
+- 🚀 **Auto-dialer** that processes CSV uploads and calls leads sequentially
+
+**Perfect for Indian startups & SMBs looking to scale outbound sales with AI!**
+
+---
+
+## 🚀 Quick Start
+
+**Full Documentation:**
+- **[CallKaro AI Features & Architecture](./CALLKARO_README.md)** - Complete overview
+- **[Setup Guide](./SETUP_GUIDE.md)** - Step-by-step installation with API keys
+
+**Quick Install:**
+```bash
+pnpm install
+cp .env.example .env.local
+# Fill in your API keys
+pnpm run download-files
+pnpm run dev
+```
+
+---
+
+## 🎯 Core Features
+
+| Feature | Technology | Status |
+|---------|-----------|--------|
+| Outbound Calling | Twilio + LiveKit | ✅ Complete |
+| STT (Indian English) | Deepgram Nova-2 | ✅ Complete |
+| LLM (Hinglish) | Google Gemini 1.5 Flash | ✅ Complete |
+| TTS (Desi Voice) | Cartesia Sonic 3 | ✅ Complete |
+| Meeting Booking | Google Calendar + Zoom | ✅ Complete |
+| Lead Management | Supabase + CSV Upload | ✅ Complete |
+| Auto-Dialer | Custom Queue System | ✅ Complete |
+| Call Recording | Twilio + Supabase | ✅ Complete |
+| Transcripts | Real-time Storage | ✅ Complete |
+| Analytics | Supabase Functions | ✅ Complete |
+| Live Transfer | Twilio Transfer | ✅ Complete |
+| Dashboard | Next.js (Coming Soon) | 🚧 Planned |
+
+---
+
 <a href="https://livekit.io/">
   <img src="./.github/assets/livekit-mark.png" alt="LiveKit logo" width="100" height="100">
 </a>
 
-# LiveKit Agents Starter - Node.js
+# Original: LiveKit Agents Starter - Node.js
 
 A complete starter project for building voice AI apps with [LiveKit Agents for Node.js](https://github.com/livekit/agents-js) and [LiveKit Cloud](https://cloud.livekit.io/).
 
